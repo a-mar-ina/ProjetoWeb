@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    Faça um script que pede duas variáveis
+<head>
+    <script>
+        function trocar(){
+        var n1 = parseInt(document.getElementById("n1").value);
+        var n2 = parseInt(document.getElementById("n2").value);
+        var aux = n1;
+        alert("Primeiro numero:" + n1+ "Segundo numero: "+ n2 );
+        n1 = n2;
+        n2 = aux;
+        alert("Após a troca Primeiro numero: " + n1 +"Segundo numero" + n2)
+    }
+</script>
+
+    <body>
+        <form name="form1" action="">
+            Digite primeiro número:
+            <input type="text" name="numero" id="n1">
+        <br /><br/><br/><br/>
+        Digite segundo número:
+        <input type="text" name="numero" id="n2">
+        <br /><br/><br/><br/>
+
+        <input type="submit" onclick="trocar(); return false;" value="troca">
+        </form>
+
+    </body>
+</html>
+    

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista6</title>
+</head>
+
+<script>
+    function soma(x,y){
+        return (x + y);
+    }
+    function subtracao(x,y){
+        return (x - y);
+    }
+    function divisao(x,y){
+        return (x / y);
+    }
+    function multiplicacao(x,y){
+        return (x * y);
+    }
+</script>
+<body>
+    <form name="form1" action="">
+        Digite primeiro número:
+        <input type="text" name="numero" id="n1">
+    <br /><br/><br/><br/>
+    Digite segundo número:
+    <input type="text" name="numero" id="n2">
+    <br /><br/><br/><br/>
+
+    <input type="radio" name="calc" id="soma"/>Soma<br/>
+    <input type="radio" name="calc" id="subtracao"/>Subtracao<br/>
+    <input type="radio" name="calc" id="divisao"/>Divisao<br/>
+    <input type="radio" name="calc" id="multiplicacao"/>Multiplicacao<br/>
+    <input type="submit" onclick="pricipal()" value="calcular">
+    </form>
+</body>
+</html>

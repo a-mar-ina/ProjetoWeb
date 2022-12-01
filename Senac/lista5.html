@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>. Faça um script que leia três números inteiros, em seguida mostre o maior e o menor deles. </title>
+</head>
+<body>
+    <script>
+        function verificar(){
+        var n1 =  window.document.form1.n1.value;
+        n1 = parsefloat(n1)
+        var n2 = window.document.form1.n2.value;
+        n2 = parsefloat(n2)
+        var n3 = window.document.form1.n3.value;
+        n3 = parsefloat(n3)
+
+        if (n1 > m2 && n1 >n3){
+        alert("Primeiro é maior" + n1);
+    } else if (n2 > n1 && n2 > n3){
+        alert("Segundo é maior" + n2);
+    } else {"Terceiro é maior" +n3}
+        
+     if (n1 < m2 && n1 < n3){
+        alert("Primeiro é menor" + n1);
+    } else if (n2 < n1 && n2 < n3){
+        alert("Segundo é menor" + n2);
+    } else {"Terceiro é menor" +n3}
+    }
+    </script>
+
+</body>
+<form name="form1" action="">
+    Digite primeiro número:
+    <input type="text" name="numero" id="n1">
+<br /><br/><br/><br/>
+    Digite segundo número:
+<input type="text" name="numero" id="n2">
+<br /><br/><br/><br/>
+
+<input type="submit" onclick="trocar(); return false;" value="troca">
+</form>
+</html>
